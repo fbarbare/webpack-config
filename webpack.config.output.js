@@ -1,6 +1,6 @@
-module.exports = function (path, filename) {
+module.exports = function (folder, filename) {
   return {
-    path: path,
+    path: folder,
     filename: filename
   };
 };

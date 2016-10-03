@@ -1,8 +1,8 @@
 var path = require('path');
 
-module.exports = function (path, filename) {
+module.exports = function (folder, filename) {
   return [
     'babel-polyfill',
-    path.join(path, filename)
+    path.join(folder, filename)
   ];
 };
