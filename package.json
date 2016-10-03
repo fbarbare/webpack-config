@@ -1,0 +1,30 @@
+{
+  "name": "floflo-webpack-config",
+  "version": "1.0.0",
+  "description": "A webpack config to generate your files easily",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/florian-barbare/webpack-config.git"
+  },
+  "keywords": [
+    "webpack",
+    "config"
+  ],
+  "author": "Florian Barbare",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/florian-barbare/webpack-config/issues"
+  },
+  "homepage": "https://github.com/florian-barbare/webpack-config#readme",
+  "dependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-polyfill": "^6.16.0",
+    "webpack": "^1.13.2"
+  },
+  "devDependencies": {}
+}

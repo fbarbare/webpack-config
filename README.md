@@ -1,2 +1,2 @@
 # webpack-config
-A webpack config to to generate your files easily 
+A webpack config to generate your files easily
