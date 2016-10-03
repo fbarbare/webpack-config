@@ -1,6 +1,6 @@
 {
   "name": "floflo-webpack-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A webpack config to generate your files easily",
   "main": "webpack.config.js",
   "scripts": {
