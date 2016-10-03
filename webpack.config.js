@@ -1,8 +1,8 @@
-var entry = require('./webpack.config.entry.js');
-var output = require('./webpack.config.output.js');
-var module = require('./webpack.config.module.js');
-var resolve = require('./webpack.config.resolve.js');
-var plugins = require('./webpack.config.plugins.js');
+var configEntry = require('./webpack.config.entry.js');
+var configOutput = require('./webpack.config.output.js');
+var configModule = require('./webpack.config.module.js');
+var configResolve = require('./webpack.config.resolve.js');
+var configPlugins = require('./webpack.config.plugins.js');
 
 module.exports = function (options) {
   var sourcePath = options.sourcePath;
@@ -11,10 +11,10 @@ module.exports = function (options) {
   var destinationFileName = options.destinationFileName;
 
   return {
-    entry: entry(sourcePath, sourceFileName),
-    output: output(destinationPath, destinationFileName),
-    module: module(),
-    resolve: resolve(),
-    plugins: plugins()
+    entry: configEntry(sourcePath, sourceFileName),
+    output: configOutput(destinationPath, destinationFileName),
+    module: configModule(),
+    resolve: configResolve(),
+    plugins: configPlugins()
   };
 };
