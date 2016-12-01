@@ -5,6 +5,7 @@ var configResolve = require('./webpack.config.resolve.js');
 var configPlugins = require('./webpack.config.plugins.js');
 
 module.exports = function (options) {
+  var processEnv = options['process.env'];
   var sourcePath = options.sourcePath;
   var sourceFileName = options.sourceFileName;
   var destinationPath = options.destinationPath;
@@ -15,6 +16,6 @@ module.exports = function (options) {
     output: configOutput(destinationPath, destinationFileName),
     module: configModule(),
     resolve: configResolve(),
-    plugins: configPlugins()
+    plugins: configPlugins(processEnv)
   };
 };
